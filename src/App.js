@@ -1,43 +1,13 @@
-function Title(){
-    return(
-        <h1>SPRING</h1>
-    )
-}
+import Title from "./components/title/Title";
+import About from "./components/about/About";
+
 function App() {
   return (
     <div className="App">
-        <Header/>
-        <Content/>
-        <Footer/>
+        <Title title="title"  subtitle="subtitle"/>
+        <About title="titleAbout" body="body" link="link"/>
     </div>
   );
-}
-function Header(){
-    return(
-        <div>
-            <h2>Header</h2>
-            <Title/>
-        </div>
-
-    )
-}
-
-function Content(){
-    return(
-        <div>
-            <h2>Content</h2>
-            <Title/>
-        </div>
-    )
-}
-
-function Footer() {
-    return(
-        <div>
-            <h2>Footer</h2>
-            <Title/>
-        </div>
-    )
 }
 
 export default App;
